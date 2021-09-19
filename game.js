@@ -13,7 +13,13 @@ $(document).keypress(function() {
     started = true;
   }
 });
-
+$("#level-title").click(function() {
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
 $(".btn").click(function() {
 
 
